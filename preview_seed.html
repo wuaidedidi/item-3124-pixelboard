@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Seed 图片预览 - 请告诉我对应关系</title>
+<style>
+body { font-family: sans-serif; background: #1a1a2e; color: #eee; padding: 20px; }
+h1 { color: #e94560; }
+h2 { color: #0f3460; background: #e94560; display: inline-block; padding: 4px 16px; border-radius: 4px; margin-top: 30px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
+.card { background: #16213e; border-radius: 8px; overflow: hidden; }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card .info { padding: 10px; }
+.card .filename { font-weight: bold; color: #e94560; font-size: 14px; }
+.card .current { color: #888; font-size: 12px; margin-top: 4px; }
+.section { margin-bottom: 40px; }
+table { border-collapse: collapse; margin-top: 10px; }
+td, th { border: 1px solid #333; padding: 6px 12px; text-align: left; }
+th { background: #0f3460; }
+</style>
+</head>
+<body>
+<h1>Seed 图片预览</h1>
+<p>请查看每张图片的实际内容，然后告诉我需要怎么调整对应关系。</p>
+
+<h2>分类封面 (8张)</h2>
+<p>当前分配：按顺序对应 摄影/插画/UI设计/平面设计/3D渲染/壁纸/纹理/建筑</p>
+<div class="grid">
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_photography.png" alt="">
+    <div class="info">
+      <div class="filename">cat_photography.png (原: 继续对话.png)</div>
+      <div class="current">当前分配 → 摄影</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_illustration.png" alt="">
+    <div class="info">
+      <div class="filename">cat_illustration.png (原: 继续对话(1).png)</div>
+      <div class="current">当前分配 → 插画</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_uidesign.png" alt="">
+    <div class="info">
+      <div class="filename">cat_uidesign.png (原: 继续对话(2).png)</div>
+      <div class="current">当前分配 → UI设计</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_graphic.png" alt="">
+    <div class="info">
+      <div class="filename">cat_graphic.png (原: 继续对话(3).png)</div>
+      <div class="current">当前分配 → 平面设计</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_3drender.png" alt="">
+    <div class="info">
+      <div class="filename">cat_3drender.png (原: 继续对话(4).png)</div>
+      <div class="current">当前分配 → 3D渲染</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_wallpaper.png" alt="">
+    <div class="info">
+      <div class="filename">cat_wallpaper.png (原: 继续对话(5).png)</div>
+      <div class="current">当前分配 → 壁纸</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_texture.png" alt="">
+    <div class="info">
+      <div class="filename">cat_texture.png (原: 继续对话(6).png)</div>
+      <div class="current">当前分配 → 纹理</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/cat_architecture.png" alt="">
+    <div class="info">
+      <div class="filename">cat_architecture.png (原: 继续对话(7).png)</div>
+      <div class="current">当前分配 → 建筑</div>
+    </div>
+  </div>
+</div>
+
+<h2>素材图片 (24张)</h2>
+<p>当前分配：按顺序对应24个素材条目</p>
+<div class="grid">
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_01_sunset_coast.png" alt="">
+    <div class="info">
+      <div class="filename">mat_01 (原: 继续对话(8).png)</div>
+      <div class="current">当前 → 金色夕阳下的海岸线 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_02_minimal_office.png" alt="">
+    <div class="info">
+      <div class="filename">mat_02 (原: 继续对话(9).png)</div>
+      <div class="current">当前 → 极简主义办公空间 [建筑]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_03_cyberpunk_city.png" alt="">
+    <div class="info">
+      <div class="filename">mat_03 (原: 继续对话(10).png)</div>
+      <div class="current">当前 → 赛博朋克城市夜景 [插画]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_04_ecommerce_app.png" alt="">
+    <div class="info">
+      <div class="filename">mat_04 (原: 继续对话(11).png)</div>
+      <div class="current">当前 → 移动端电商APP界面 [UI设计]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_05_retro_portrait.png" alt="">
+    <div class="info">
+      <div class="filename">mat_05 (原: 继续对话(12).png)</div>
+      <div class="current">当前 → 复古胶片风人像写真 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_06_abstract_gradient.png" alt="">
+    <div class="info">
+      <div class="filename">mat_06 (原: 继续对话(13).png)</div>
+      <div class="current">当前 → 抽象几何渐变背景 [壁纸]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_07_watercolor_flowers.png" alt="">
+    <div class="info">
+      <div class="filename">mat_07 (原: 继续对话(14).png)</div>
+      <div class="current">当前 → 手绘水彩花卉插画 [插画]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_08_brand_vi.png" alt="">
+    <div class="info">
+      <div class="filename">mat_08 (原: 继续对话(15).png)</div>
+      <div class="current">当前 → 品牌VI视觉系统设计 [平面设计]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_09_scifi_3d.png" alt="">
+    <div class="info">
+      <div class="filename">mat_09 (原: 继续对话(16).png)</div>
+      <div class="current">当前 → 未来科技感3D场景 [3D渲染]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_10_japanese_texture.png" alt="">
+    <div class="info">
+      <div class="filename">mat_10 (原: 继续对话(17).png)</div>
+      <div class="current">当前 → 日式和风纹理素材 [纹理]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_11_starry_sky.png" alt="">
+    <div class="info">
+      <div class="filename">mat_11 (原: 继续对话(18).png)</div>
+      <div class="current">当前 → 星空银河延时摄影 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_12_finance_dashboard.png" alt="">
+    <div class="info">
+      <div class="filename">mat_12 (原: 继续对话(19).png)</div>
+      <div class="current">当前 → 扁平化金融Dashboard [UI设计]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_13_mountain_mist.png" alt="">
+    <div class="info">
+      <div class="filename">mat_13 (原: 继续对话(20).png)</div>
+      <div class="current">当前 → 山间薄雾晨光 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_14_pixel_game.png" alt="">
+    <div class="info">
+      <div class="filename">mat_14 (原: 继续对话(21).png)</div>
+      <div class="current">当前 → 像素风游戏角色设计 [插画]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_15_coral_reef.png" alt="">
+    <div class="info">
+      <div class="filename">mat_15 (原: 继续对话(22).png)</div>
+      <div class="current">当前 → 深海珊瑚礁水下摄影 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_16_dark_product.png" alt="">
+    <div class="info">
+      <div class="filename">mat_16 (原: 继续对话(23).png)</div>
+      <div class="current">当前 → 暗色系产品展示模板 [UI设计]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_17_oil_painting.png" alt="">
+    <div class="info">
+      <div class="filename">mat_17 (原: 继续对话(24).png)</div>
+      <div class="current">当前 → 油画风格风景插画 [插画]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_18_street_graffiti.png" alt="">
+    <div class="info">
+      <div class="filename">mat_18 (原: 继续对话(25).png)</div>
+      <div class="current">当前 → 城市街头涂鸦艺术 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_19_3d_sculpture.png" alt="">
+    <div class="info">
+      <div class="filename">mat_19 (原: 继续对话(26).png)</div>
+      <div class="current">当前 → 3D抽象雕塑渲染 [3D渲染]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_20_food_photo.png" alt="">
+    <div class="info">
+      <div class="filename">mat_20 (原: 继续对话(27).png)</div>
+      <div class="current">当前 → 清新美食摄影集 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_21_nordic_interior.png" alt="">
+    <div class="info">
+      <div class="filename">mat_21 (原: 继续对话(28).png)</div>
+      <div class="current">当前 → 北欧风室内设计方案 [建筑]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_22_pop_art_poster.png" alt="">
+    <div class="info">
+      <div class="filename">mat_22 (原: 继续对话(29).png)</div>
+      <div class="current">当前 → 波普艺术海报设计 [平面设计]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_23_city_skyline.png" alt="">
+    <div class="info">
+      <div class="filename">mat_23 (原: 继续对话(30).png)</div>
+      <div class="current">当前 → 夜晚城市天际线 [摄影]</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/mat_24_travel_map.png" alt="">
+    <div class="info">
+      <div class="filename">mat_24 (原: 继续对话(31).png)</div>
+      <div class="current">当前 → 手绘旅行地图插画 [插画]</div>
+    </div>
+  </div>
+</div>
+
+<h2>备用图片 (13张，未使用)</h2>
+<p>如果上面的图片不合适，可以用这些替换</p>
+<div class="grid">
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (32).png" alt="">
+    <div class="info"><div class="filename">继续对话(32).png - 备用1</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (33).png" alt="">
+    <div class="info"><div class="filename">继续对话(33).png - 备用2</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (34).png" alt="">
+    <div class="info"><div class="filename">继续对话(34).png - 备用3</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (35).png" alt="">
+    <div class="info"><div class="filename">继续对话(35).png - 备用4</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (36).png" alt="">
+    <div class="info"><div class="filename">继续对话(36).png - 备用5</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (37).png" alt="">
+    <div class="info"><div class="filename">继续对话(37).png - 备用6</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (38).png" alt="">
+    <div class="info"><div class="filename">继续对话(38).png - 备用7</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (39).png" alt="">
+    <div class="info"><div class="filename">继续对话(39).png - 备用8</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (40).png" alt="">
+    <div class="info"><div class="filename">继续对话(40).png - 备用9</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (41).png" alt="">
+    <div class="info"><div class="filename">继续对话(41).png - 备用10</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (42).png" alt="">
+    <div class="info"><div class="filename">继续对话(42).png - 备用11</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (43).png" alt="">
+    <div class="info"><div class="filename">继续对话(43).png - 备用12</div></div>
+  </div>
+  <div class="card">
+    <img src="http://localhost:8000/uploads/seed/继续对话 (44).png" alt="">
+    <div class="info"><div class="filename">继续对话(44).png - 备用13</div></div>
+  </div>
+</div>
+
+<h2>使用说明</h2>
+<p>请查看上面的图片，然后告诉我：</p>
+<ol>
+  <li>哪些图片需要换位置（比如"mat_03的图片更适合做摄影分类的封面"）</li>
+  <li>或者直接告诉我每张图片你看到的内容，我来重新分配</li>
+  <li>备用图片中如果有更合适的，也可以替换进来</li>
+</ol>
+</body>
+</html>
