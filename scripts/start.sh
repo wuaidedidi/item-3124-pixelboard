@@ -16,13 +16,13 @@ echo "Database: $DATABASE_URL"
 uvicorn app.main:app --host 0.0.0.0 --port 8000 &
 API_PID=$!
 
-nginx -g "daemon off;" &
-NGINX_PID=$!
+python /app/scripts/static_server.py &
+FRONTEND_PID=$!
 
 term_handler() {
-    kill "$API_PID" "$NGINX_PID" 2>/dev/null || true
+    kill "$API_PID" "$FRONTEND_PID" 2>/dev/null || true
 }
 
 trap term_handler TERM INT
-wait -n "$API_PID" "$NGINX_PID"
+wait -n "$API_PID" "$FRONTEND_PID"
 term_handler
